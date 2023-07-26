@@ -1,0 +1,24 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+#header {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+#profile {
+  text-align: center;
+  padding: 20px;
+}
+
+#profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+#resume, #projects {
+  margin: 20px;
+}
