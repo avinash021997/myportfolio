@@ -5,12 +5,16 @@ body {
 #header {
   text-align: center;
   padding: 20px;
-  background-color: #f0f0f0;
+  background-color: #3271dd;
 }
 
 #profile {
   text-align: center;
   padding: 20px;
+}
+
+#profile p {
+  text-align: left;
 }
 
 #profile-pic {
@@ -21,4 +25,14 @@ body {
 
 #resume, #projects {
   margin: 20px;
+}
+
+.contact-button {
+  /* Styles for the Contact button */
+  margin-top: 10px; /* Adjust the margin as needed to position the button */
+}
+
+.contact-details {
+  /* Styles for the contact details container */
+  display: none; /* Hide the contact details by default */
 }

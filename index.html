@@ -9,10 +9,18 @@
     <h1>Welcome to my portfolio!</h1>
   </div>
 
+  <button class="contact-button" onclick="toggleContactDetails()">Contact</button>
+  <div class="contact-details" id="contactDetails">
+    <p>Phone: +1 (940)297-9104</p>
+    <p>Email: avinashdkokate02@gmail.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/avinash-kokate-7b130215a/">Y LinkedIn Profile</a></p>
+    <!-- Add more contact details if needed -->
+  </div>
+
   <div id="profile">
-    <img src="profile.jpg" alt="Profile Photo">
-    <h2>My Name</h2>
-    <p>A short description about myself.</p>
+    <img id="profile-pic" src="ProfilePic.jpeg" alt="Profile Photo">
+    <h2>Avinash Kokate</h2>
+    <p>A dedicated Java Developer with nearly 3 years of experience in robust application development, specializing in RESTful APIs and database performance optimization. Proficient with Spring Framework, Hibernate, MVC frameworks, and CI/CD pipeline implementation. Recognized for delivering high-quality software solutions in collaborative, agile environments. Holds advanced degrees in Computer Science and Electronics and Telecommunication Engineering.</p>
   </div>
 
   <div id="resume">
@@ -21,10 +29,62 @@
   </div>
 
   <div id="projects">
-    <h2>Projects</h2>
-    <p>Description of Project 1.</p>
-    <p>Description of Project 2.</p>
-    <p>Description of Project 3.</p>
+    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#workHistoryModal">Work History</button>
+    <div class="modal fade" id="workHistoryModal" tabindex="-1" role="dialog" aria-labelledby="workHistoryModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="workHistoryModalLabel">Work History</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h3>Infosys (Client: UBS Financial Services)</h3>
+            <h5>Project Description: </h5>
+            <ul>
+                <li>Involved in complete Software Development Life Cycle (SDLC) including Analysis, Design, Implementation, Testing and Maintenance using Agile methodology.</li>
+                <li>Designed, developed, and maintained robust and scalable Java applications for various industries.</li>
+                <li>Utilized frameworks like Spring Boot to create RESTful web services for seamless integration with front-end applications.</li>
+                <li>Integrated Java applications with databases, using Hibernate for object-relational mapping and efficient data access.</li>
+                <li>Demonstrated expertise in developing Java applications using MVC frameworks such as Spring MVC, Java Server Faces (JSF), or Apache Struts.</li>
+                <li>Proficient in establishing database connectivity from Java applications to MSSQL Server using JDBC.</li>
+                <li>Integrated Kafka producers with other systems or frameworks, such as Spring Kafka or Apache Camel, to enhance functionality and ease of development.</li>
+                <li>Conducted unit tests on JPA repositories using testing frameworks like JUnit and Mockito.</li>
+                <li>Defined API endpoints, request/response payloads, query parameters, and error handling Swagger/OpenAPI YAML or JSON files.</li>
+                <li>Experienced in implementing CI/CD pipelines on Azure for streamlined software development.</li>
+            </ul>
+            <h3>Humana</h3>
+            <h5>Project Description: </h5>
+            <ul>
+                <li>Builds and developed java interfacing with different backend systems in Mainframe.</li>
+                <li>Configured deployment descriptors in Hibernate to achieve object- relational mapping.</li>
+                <li>Developed user interfaces using JSP, JSF framework with Ajax, JavaScript, HTML and CSS.</li>
+                <li>Developed data access classes using JDBC and SQL for logging and SVN for version control.</li>
+                <li>Migrated SOAP web service resources to Spring RESTful web services resources using Spring REST API with Spring Boot.</li>
+                <li>Proficient in implementing Kafka-based solutions to enable efficient data streaming and real-time event processing.</li>
+            </ul>
+            <h3>Trigyn Technologies</h3>
+            <h5>Project Description: </h5>
+            <ul>
+                <li>Developed web application using Java, Spring, and Hibernate, implementing.</li>
+                <li>CRUD operations and integrating with a database.</li>
+                <li>Created Java-based inventory management system to track and manage product stock levels, utilizing object-oriented design principles.</li>
+                <li>Collaborated on team project to build a RESTful API using Java and Spring Boot, providing endpoints for data retrieval and manipulation.</li>
+                <li>Worked collaboratively in Agile development environment, participating in daily stand-ups and contributing to sprint planning and reviews.</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap and jQuery scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>    
   </div>
 
   <script src="main.js"></script>
