@@ -8,4 +8,4 @@ function toggleContactDetails() {
   } else {
     contactDetails.style.display = "none";
   }
-}
+} 
